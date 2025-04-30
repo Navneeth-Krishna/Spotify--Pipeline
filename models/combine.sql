@@ -1,0 +1,45 @@
+SELECT
+  track_name,
+  track_number,
+  popularity,
+  duration_min,
+  artist_names,
+  artist_uri,
+  artist_genres,
+  release_date,
+  disk_number,
+  explicit,
+  track_uri,
+  album_uri,
+  album_name,
+  label,
+  isrc,
+  copyrights,
+  added_by,
+  added_at
+FROM
+  `spotify-458017.Top_songs.Live_Table`
+
+UNION ALL
+
+SELECT
+  track_name,
+  track_number,
+  popularity,
+  duration_min,
+  artist_names,
+  artist_uri,
+  artist_genres,
+  release_date,
+  disk_number,
+  explicit,
+  track_uri,
+  album_uri,
+  album_name,
+  label,
+  isrc,
+  copyrights,
+  added_by,
+  added_at
+FROM
+  `spotify-458017.Top_songs.Historic_Table`
